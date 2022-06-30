@@ -29,7 +29,7 @@ const MEAL_DATA = [
 ]
 
 const MealsList = () => {
-	const mealsList = MEAL_DATA.map((meal) => <MealItem key={meal.id} name={meal.name} description={meal.description} price={meal.price} />)
+	const mealsList = MEAL_DATA.map((meal) => <MealItem key={meal.id} id={meal.id} name={meal.name} description={meal.description} price={meal.price} />)
 	return (
 		<section className="meal-list">
 			<Card>
