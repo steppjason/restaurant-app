@@ -11,7 +11,7 @@ const Cart = (props) => {
 	]
 
 	return (
-		<Modal>
+		<Modal onHideCart={props.onHideCart}>
 			<ul className="cart__items">
 				{cartItems.map((item) => (
 					<li key={item.id}>{item.name}</li>
@@ -22,7 +22,7 @@ const Cart = (props) => {
 				<span>35.62</span>
 			</div>
 			<div className="cart__actions">
-				<button className="cart__close-button">Close</button>
+				<button className="cart__close-button" onClick={props.onHideCart}>Close</button>
 				<button className="cart__order-button">Order</button>
 			</div>
 		</Modal>

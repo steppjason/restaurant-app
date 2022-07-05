@@ -1,8 +1,8 @@
 import CartIcon from "../Cart/CartIcon"
 
-const CartButton = () => {
+const CartButton = (props) => {
 	return (
-		<button className="cart-button">
+		<button className="cart-button" onClick={props.onClick}>
 			<span className="cart-button__icon">
 				<CartIcon />
 			</span>
